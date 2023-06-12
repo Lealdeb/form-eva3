@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Formulario evaluacion II</title>
+</head>
+<main>
+    <br>
+    <br>
+    <h1>Formulario de registro </h1>
+</main>
+<body>
+    <div class="caja">
+        
+    <div class="container mt-3">
+        <form action="" method="post" onsubmit="return validar()">
+<!--nombre de usuario e email-->
+<div class="row">
+            <div>
+                <label for="email">Correo electronico </label>
+                <input id="email" class="form-control" type="text" placeholder="Ingrese su correo electronico">
+                <div id="err_email"></div>
+            </div>
+    </div>
+<!--contraseñas-->
+<div class="row">
+                <div class="col-6 my-2">
+                    <label for="pass1">Contraseña</label>
+                    <input id="pass1" class="form-control" type="password" placeholder="Ingrese su contraseña">
+                    <div id="err_pass1"></div>
+                </div>
+            
+
+                <div class="col-6 my-2">
+                    <label for="pass2">Contraseña</label>
+                    <input id="pass2" class="form-control" type="password" placeholder="Ingrese nuevamente su contraseña">
+                    <div id="err_pass2"></div>
+                </div>
+            </div>
+
+<!--ciudad y direccion-->
+            <div class="row"> 
+                <div class="col-6 my-2">
+                    <label for="ciudad">Ciudad</label>
+                    <select id="ciudad" class="form-select">
+                        <option selected>Seleccione su ciudad...</option>
+                        <option>Valdivia</option>
+                        <option>Osorno</option>
+                        <option>Temuco</option>
+                      </select>
+                      <div id="err_ciudad"></div>
+                </div>
+            
+            
+                <div class="col-6 my-2">
+                    <label for="direccion">Direccion</label>
+                    <input id="direccion" type="text" class="form-control" placeholder="Ingrese su dirección">
+                    <div id="err_direc"></div>
+                </div>
+            </div>
+<!--telefono y web-->          
+            <div class="row"> 
+                <div class="col-4 my-2">
+                    <label for="telefono">Telefono</label>
+                    <input id="telefono" class="form-control" type="text" placeholder="Ingrese su celular">
+                    <div id="err_telefono"></div>
+            </div>
+
+                <div class="col-8 my-2">
+                    <label for="url">url</label>
+                    <input id="url" class= "form-control" type="text" placeholder="Ingrese una pagina web">
+                    <div id="err_url"></div>
+                </div>
+<!--pasatiempo-->                  
+        
+            <div class="container">
+                <label for="nombre">Aficiones y pasatiempos</label>
+                <input id="nombre" class="form-control" type="text" placeholder="Ingrese al menos dos aficiones o pasatiempos">
+                
+                <div botons>
+                <button onclick="proceso()" class="col-2 btn btn-dark my-3">Agregar</button>
+            </div>
+                <div class="my-2" id="lista"></div>
+            </div>
+
+            <div class="col-12 my-6">
+    
+            <div class="botons2">
+            <input class="col-4 btn btn-dark my-2" type="submit" value="Enviar">
+        </div>
+    </div>
+      
+    </div>
+    </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/scriptform.js"></script>
+</body>
+</html>

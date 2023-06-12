@@ -1,0 +1,36 @@
+main{
+    background-color: #EDAFB8;   
+    background-size: 100% 100%;
+    text-align: center;
+    color:#4A5759;
+}
+
+body {
+    background-color: #EDAFB8;
+    color:#4A5759;
+
+}
+
+.caja {
+    background-color: #B0C4B1;
+    margin: 2rem;
+    padding: 25px;
+    border: 3rem;
+    border-radius: 3rem;
+    opacity: 0.9;
+}
+
+
+.botons2{
+    text-align: center;
+    border: 2px;
+    border-color: black;
+    border-radius: 1px;
+    width: 100%;
+}
+
+.btn:hover{
+    background: #EDAFB8;
+    text-decoration: none;
+
+}
